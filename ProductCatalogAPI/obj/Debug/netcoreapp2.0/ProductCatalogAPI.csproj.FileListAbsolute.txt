@@ -1,0 +1,11 @@
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\bin\Debug\netcoreapp2.0\ProductCatalogAPI.deps.json
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\bin\Debug\netcoreapp2.0\ProductCatalogAPI.runtimeconfig.json
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\bin\Debug\netcoreapp2.0\ProductCatalogAPI.runtimeconfig.dev.json
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\bin\Debug\netcoreapp2.0\ProductCatalogAPI.dll
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.csprojAssemblyReference.cache
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.csproj.CoreCompileInputs.cache
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.AssemblyInfoInputs.cache
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.AssemblyInfo.cs
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\bin\Debug\netcoreapp2.0\ProductCatalogAPI.pdb
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.dll
+C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.pdb

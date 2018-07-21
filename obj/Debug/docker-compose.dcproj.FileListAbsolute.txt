@@ -1,0 +1,1 @@
+C:\Github\eCommerceSite\eCommerceContainer\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
