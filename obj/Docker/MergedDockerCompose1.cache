@@ -1,7 +1,7 @@
 services:
   productcatalogapi:
     build:
-      context: C:\Github\eCommerceSite\eCommerceContainer
+      context: C:\Github\eCommerce
       dockerfile: ProductCatalogAPI/Dockerfile
       target: base
     entrypoint: tail -f /dev/null
@@ -20,7 +20,7 @@ services:
     ports:
     - target: 80
     volumes:
-    - C:\Github\eCommerceSite\eCommerceContainer\ProductCatalogAPI:/app:rw
+    - C:\Github\eCommerce\ProductCatalogAPI:/app:rw
     - C:\Users\harel\vsdbg\vs2017u5:/remote_debugger:ro
     - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
     - C:\Users\harel\.nuget\packages:/root/.nuget/packages:ro
