@@ -19,4 +19,3 @@ C:\Github\eCommerce\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.
 C:\Github\eCommerce\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.AssemblyInfo.cs
 C:\Github\eCommerce\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.dll
 C:\Github\eCommerce\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.pdb
-C:\Github\eCommerce\ProductCatalogAPI\obj\Debug\netcoreapp2.0\ProductCatalogAPI.csprojAssemblyReference.cache
