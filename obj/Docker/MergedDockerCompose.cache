@@ -1,11 +1,35 @@
+networks:
+  backend: {}
+  frontend: {}
 services:
-  productcatalogapi:
+  catalog:
     build:
-      context: C:\Github\eCommerce
-      dockerfile: ProductCatalogAPI/Dockerfile
+      context: C:\Github\eCommerce\ProductCatalogAPI
+      dockerfile: Dockerfile
+    container_name: catalogapi
+    depends_on:
+    - mssqlserver
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
-    image: productcatalogapi
+      DatabaseName: CatalogDb
+      DatabaseServer: mssqlserver
+      DatabaseUser: sa
+      DatabaseUserPassword: ProductApi(!)
+    image: products/catalogapi
+    networks:
+      backend: null
+      frontend: null
     ports:
-    - target: 80
+    - published: 5030
+      target: 80
+  mssqlserver:
+    container_name: mssqlcontainer
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: ProductApi(!)
+    image: microsoft/mssql-server-linux:latest
+    networks:
+      backend: null
+    ports:
+    - published: 1440
+      target: 1433
 version: '3.4'
