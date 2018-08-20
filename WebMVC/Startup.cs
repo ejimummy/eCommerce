@@ -17,7 +17,7 @@ using Newtonsoft.Json.Serialization;
 using WebMvc.Models;
 using WebMvc.Services;
 using WebMvc.Infrastructure;
-
+using WebMvc.Services;
 
 namespace WebMvc
 {
@@ -41,14 +41,14 @@ namespace WebMvc
 
 
             services.Configure<AppSettings>(Configuration);
+            services.Configure<PaymentSettings>(Configuration);
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IHttpClient, CustomHttpClient>();
             services.AddTransient<ICatalogService, CatalogService>();
 
-            //services.AddTransient<IIdentityService<ApplicationUser>, IdentityService>();
-            //services.AddTransient<ICartService, CartService>();
-
-
+            services.AddTransient<IIdentityService<ApplicationUser>, IdentityService>();
+            services.AddTransient<ICartService, CartService>();
+            services.AddTransient<IOrderService, OrderService>();
 
             var identityUrl = Configuration.GetValue<string>("IdentityUrl");
             var callBackUrl = Configuration.GetValue<string>("CallBackUrl");
@@ -57,26 +57,27 @@ namespace WebMvc
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
                 // options.DefaultAuthenticateScheme = "Cookies";
+            })
+            .AddCookie()
+            .AddOpenIdConnect(options => {
+                options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+
+                options.Authority = identityUrl.ToString();
+                options.SignedOutRedirectUri = callBackUrl.ToString();
+                options.ClientId = "mvc";
+                options.ClientSecret = "secret";
+                options.ResponseType = "code id_token";
+                options.SaveTokens = true;
+                options.GetClaimsFromUserInfoEndpoint = true;
+                options.RequireHttpsMetadata = false;
+                options.Scope.Add("openid");
+                options.Scope.Add("profile");
+                options.Scope.Add("offline_access");
+                options.Scope.Add("basket");
+                options.Scope.Add("order");
+
+
             });
-            //.AddCookie()
-            //.AddOpenIdConnect(options => {
-            //    options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-
-            //    options.Authority = identityUrl.ToString();
-            //    options.SignedOutRedirectUri = callBackUrl.ToString();
-            //    options.ClientId = "mvc";
-            //    options.ClientSecret = "secret";
-            //    options.ResponseType = "code id_token";
-            //    options.SaveTokens = true;
-            //    options.GetClaimsFromUserInfoEndpoint = true;
-            //    options.RequireHttpsMetadata = false;
-            //    options.Scope.Add("openid");
-            //    options.Scope.Add("profile");
-            //    options.Scope.Add("offline_access");
-            //    options.Scope.Add("basket");
-
-
-            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Catalog";
     @model WebMvc.ViewModels.CatalogIndexViewModel
 }
@@ -71,23 +72,23 @@
 <div class="container">
     @if (Model.CatalogItems.Count() > 0)
     {
-    @Html.Partial("_pagination", Model.PaginationInfo)
+        @Html.Partial("_pagination", Model.PaginationInfo)
 
-    <div class="esh-catalog-items row">
-        @foreach (var catalogItem in Model.CatalogItems)
-        {
-        <div class="esh-catalog-item col-md-4">
-            @Html.Partial("_product", catalogItem)
+        <div class="esh-catalog-items row">
+            @foreach (var catalogItem in Model.CatalogItems)
+            {
+                <div class="esh-catalog-item col-md-4">
+                    @Html.Partial("_product", catalogItem)
+                </div>
+            }
         </div>
-        }
-    </div>
 
-    @Html.Partial("_pagination", Model.PaginationInfo)
+        @Html.Partial("_pagination", Model.PaginationInfo)
     }
     else
     {
-    <div class="esh-catalog-items row">
-        THERE ARE NO RESULTS THAT MATCH YOUR SEARCH
-    </div>
+        <div class="esh-catalog-items row">
+            THERE ARE NO RESULTS THAT MATCH YOUR SEARCH
+        </div>
     }
 </div>

@@ -6,6 +6,53 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.0\WebMvc.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Catalog\About.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Catalog\Index.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Catalog\_pagination.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Catalog\_product.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Order\Complete.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Order\Create.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Order\Detail.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Order\Index.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Order\Orders.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Order\_OrderItems.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\CartList\Default.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Cart\Default.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Header.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\WebMvc.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\WebMvc.RazorAssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\WebMvc.RazorTargetAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.0\WebMvc.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\WebMvc.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\WebMvc.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\WebMvc.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\WebMvc.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\WebMvc.runtimeconfig.json" />
+    <Content Include="obj\Debug\netcoreapp2.0\WebMvc.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\netcoreapp2.1\WebMvc.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
@@ -15,10 +62,84 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.0\WebMvc.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\WebMvc.pdb" />
+    <None Include="bin\Debug\netcoreapp2.1\WebMvc.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\WebMvc.pdb" />
+    <None Include="bin\Debug\netcoreapp2.1\WebMvc.Views.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\WebMvc.Views.pdb" />
+    <None Include="obj\Debug\netcoreapp2.0\WebMvc.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\WebMvc.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\WebMvc.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\WebMvc.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\WebMvc.dll" />
+    <None Include="obj\Debug\netcoreapp2.0\WebMvc.pdb" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.csproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.dll" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.pdb" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.RazorAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.RazorCoreGenerate.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.TagHelpers.input.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.TagHelpers.output.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.Views.dll" />
+    <None Include="obj\Debug\netcoreapp2.1\WebMvc.Views.pdb" />
+    <None Include="obj\Docker\AppType.cache" />
+    <None Include="obj\Docker\CanonicalServiceNames.cache" />
+    <None Include="obj\Docker\ProjectReferences.cache" />
+    <None Include="obj\Docker\RelativeOutputAssemblyPath.Fast.cache" />
+    <None Include="obj\Docker\RelativeOutputAssemblyPath.Regular.cache" />
+    <None Include="obj\Docker\TargetFramework.cache" />
+    <None Include="obj\WebMvc.csproj.nuget.cache" />
+    <None Include="obj\WebMVC.csproj.nuget.g.props" />
+    <None Include="obj\WebMVC.csproj.nuget.g.targets" />
+    <None Include="Views\Catalog\Index.cshtml" />
+    <None Include="Views\Catalog\_pagination.cshtml" />
+    <None Include="Views\Catalog\_product.cshtml" />
+    <None Include="Views\Home\About.cshtml" />
+    <None Include="Views\Home\Contact.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_Header.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
+    <None Include="WebMvc.csproj" />
+    <None Include="WebMvc.csproj.user" />
+    <None Include="wwwroot\fonts\Montserrat-Bold.svg" />
+    <None Include="wwwroot\fonts\Montserrat-Bold.woff2" />
+    <None Include="wwwroot\fonts\Montserrat-Regular.svg" />
+    <None Include="wwwroot\fonts\Montserrat-Regular.woff2" />
+    <None Include="wwwroot\images\arrow-right.svg" />
+    <None Include="wwwroot\images\arrows.psd" />
     <None Include="wwwroot\images\banner1.svg" />
     <None Include="wwwroot\images\banner2.svg" />
     <None Include="wwwroot\images\banner3.svg" />
     <None Include="wwwroot\images\banner4.svg" />
+    <None Include="wwwroot\images\fb.psd" />
+    <None Include="wwwroot\images\g+.psd" />
+    <None Include="wwwroot\images\img-sprite.psd" />
+    <None Include="wwwroot\images\logo.psd" />
+    <None Include="wwwroot\images\main_banner_text.svg" />
+    <None Include="wwwroot\images\radius.psd" />
+    <None Include="wwwroot\images\refresh.svg" />
+    <None Include="wwwroot\images\social.psd" />
+    <None Include="wwwroot\images\star.psd" />
+    <None Include="wwwroot\images\s_arrow.psd" />
+    <None Include="wwwroot\images\tw.psd" />
+    <None Include="wwwroot\js\easing.js" />
+    <None Include="wwwroot\js\jquery.etalage.min.js" />
+    <None Include="wwwroot\js\jquery.flexisel.js" />
+    <None Include="wwwroot\js\jquery.jscrollpane.min.js" />
+    <None Include="wwwroot\js\jquery.min.js" />
+    <None Include="wwwroot\js\jquery.wmuSlider.js" />
+    <None Include="wwwroot\js\megamenu.js" />
+    <None Include="wwwroot\js\move-top.js" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\js\site.min.js" />
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
@@ -41,6 +162,10 @@
     <None Include="wwwroot\lib\jquery\dist\jquery.js" />
     <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
     <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="obj\Docker\empty\" />
   </ItemGroup>
 
 </Project>
