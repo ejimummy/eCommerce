@@ -10,8 +10,7 @@ using WebMvc.Services;
 using WebMvc.Models;
 using WebMvc.Models.CartModels;
 using Polly.CircuitBreaker;
-using WebMvc.Services;
-using WebMvc.Models;
+
 
 namespace WebMvc.Controllers
 {
